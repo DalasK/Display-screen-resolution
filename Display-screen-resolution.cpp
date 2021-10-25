@@ -11,21 +11,21 @@ int main() {
 
 	SetConsoleTitleA("DisplayScreenResolution");  // Titre + création + placement de la fenêtre 
 	HWND hwnd = GetConsoleWindow();
-	MoveWindow(hwnd, l / 2, h / 2, 500, 200, TRUE);
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); // Couleur rouge
+	MoveWindow(hwnd, l / 2, h / 2, 500, 200, TRUE); // Bouge la le coin supérieur gauche de la fenêtre au centre de l'écran
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); // Couleur rouge du texte
 
 	cout << "La largeur (en pixel) de votre ecran est de: ";
 	printf("%d px", l); // Affichage de la largeur en pixel de l'Ã©cran.
 
 	cout << " \n\n";
 
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12); //Couleur verte
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12); //Couleur verte du texte
 	cout << "La hauteur (en pixel) de votre ecran est de: ";
 	printf("%d px", h); // Affichage de la hauteur en pixel de l'écran
 
 	cout << " \n\n";
 
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 9); //Couleur bleue
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 9); //Couleur bleue du texte
 	cout << "Soit au total ";
 	printf("%d pixels !", PIXEL_MAX);
 	// Une résolution de X * Y (1920 * 1080 par exemple) signifie qu'il existe dans l'image X (1920) colonnes et Y (1080) lignes 
