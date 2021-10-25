@@ -9,7 +9,7 @@ int main() {
 	int h = GetSystemMetrics(SM_CYSCREEN); // Récupère la valeur en pixels de la hauteur d'un écran
 	int PIXEL_MAX = l * h; // Calcul de la surface en pixels de l'écran
 
-	SetConsoleTitleA("DisplayScreenResolution");  // Titre + création + placement de la fenÃªtre 
+	SetConsoleTitleA("DisplayScreenResolution");  // Titre + création + placement de la fenêtre 
 	HWND hwnd = GetConsoleWindow();
 	MoveWindow(hwnd, l / 2, h / 2, 500, 200, TRUE);
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); // Couleur rouge
