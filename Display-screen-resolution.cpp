@@ -1,3 +1,4 @@
+//coder par DalasK
 #include <windows.h>
 #include <iostream>
 
