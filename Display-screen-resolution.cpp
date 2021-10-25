@@ -5,11 +5,11 @@ using namespace std;
 
 int main() {
 
-	int l = GetSystemMetrics(SM_CXSCREEN); // Récupère la valeur en pixels de la largeur d'un Ã©cran
-	int h = GetSystemMetrics(SM_CYSCREEN); // Récupère la valeur en pixels de la hauteur d'un Ã©cran
-	int PIXEL_MAX = l * h; // Calcul de la surface en pixels de l'Ã©cran
+	int l = GetSystemMetrics(SM_CXSCREEN); // Récupère la valeur en pixels de la largeur d'un écran
+	int h = GetSystemMetrics(SM_CYSCREEN); // Récupère la valeur en pixels de la hauteur d'un écran
+	int PIXEL_MAX = l * h; // Calcul de la surface en pixels de l'écran
 
-	SetConsoleTitleA("DisplayScreenResolution");  // Titre + crÃ©ation + placement de la fenÃªtre 
+	SetConsoleTitleA("DisplayScreenResolution");  // Titre + création + placement de la fenÃªtre 
 	HWND hwnd = GetConsoleWindow();
 	MoveWindow(hwnd, l / 2, h / 2, 500, 200, TRUE);
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); // Couleur rouge
@@ -21,7 +21,7 @@ int main() {
 
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12); //Couleur verte
 	cout << "La hauteur (en pixel) de votre ecran est de: ";
-	printf("%d px", h); // Affichage de la hauteur en pixel de l'Ã©cran
+	printf("%d px", h); // Affichage de la hauteur en pixel de l'écran
 
 	cout << " \n\n";
 
