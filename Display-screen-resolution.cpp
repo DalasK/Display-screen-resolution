@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 
-	int	l = GetSystemMetrics(SM_CXSCREEN); // RÃ©cupÃ¨re la valeur en pixels de la largeur d'un Ã©cran
+	int l = GetSystemMetrics(SM_CXSCREEN); // RÃ©cupÃ¨re la valeur en pixels de la largeur d'un Ã©cran
 	int h = GetSystemMetrics(SM_CYSCREEN); // RÃ©cupÃ¨re la valeur en pixels de la hauteur d'un Ã©cran
 	int PIXEL_MAX = l * h; // Calcul de la surface en pixels de l'Ã©cran
 
