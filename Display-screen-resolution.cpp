@@ -16,7 +16,7 @@ int main() {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10); // Couleur rouge du texte
 
 	cout << "La largeur (en pixel) de votre ecran est de: ";
-	printf("%d px", l); // Affichage de la largeur en pixel de l'Ã©cran.
+	printf("%d px", l); // Affichage de la largeur en pixel de l'écran.
 
 	cout << " \n\n";
 
